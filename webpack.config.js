@@ -54,6 +54,13 @@ module.exports = {
                         cacheDirectory: true, // 是否对编译结果做缓存
                     }
                 }
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader', // 加载样式
+                    'css-loader' // 编译css文件
+                ]
             }
         ]
     },
