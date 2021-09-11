@@ -1,4 +1,4 @@
-import App from './App'
+import Calculator from "./App"
 
 if(module.hot) {
     module.hot.accept(error => {
