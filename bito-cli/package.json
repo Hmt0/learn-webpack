@@ -1,0 +1,19 @@
+{
+  "name": "bito-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bitoCli.js",
+  "bin": {
+    "bito": "./bin/bitoCli.js",
+    "init": "./lib/init.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^8.2.0"
+  }
+}
