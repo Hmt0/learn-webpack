@@ -1,6 +1,14 @@
+import Edictor from "./components/Editor";
+import Preview from "./components/Preview";
+import InputEditor from "./containers/InputEditor";
+
 function App() {
   return (
-    <div>hello</div>
+    <div>
+      {/* <Edictor /> */}
+      <Preview />
+      <InputEditor />
+    </div>
   );
 }
 
