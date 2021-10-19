@@ -41,24 +41,3 @@ module.exports = class HtmlPlugin{
         })
     }
 }
-// complier.hooks.emit.tapAsync(
-//     "HtmlPlugin",
-//     function(compilation, callback) {
-//     // 编译的时候会生成对象
-//     console.log("emit");
-    
-//     // 基于数据生成对应文件
-//     console.log(compilation.assets);
-//     compilation.assets["work.md"] = {
-//         source: function() {
-//             return "## work";
-//         },
-//         size: function() {
-//             return 11;
-//         },
-//     };
-
-//     callback();
-// })
-// }
-// }
