@@ -1,10 +1,10 @@
 import InputEditor from "./containers/InputEditor";
-import ShowPreview from "./containers/ShowPreview";
 import "./App.css"
+import ShowPreview from "./containers/ShowPreview";
 
 function App() {
   return (
-    <div>
+    <div id="app">
       <InputEditor />
       <ShowPreview />
     </div>

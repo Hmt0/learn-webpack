@@ -1,6 +1,4 @@
 import React from "react";
-import store from "../store/store";
-import "./editor.css"
 
 export default function Editor({message, onInputChange}) {
     return(
