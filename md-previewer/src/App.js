@@ -1,13 +1,12 @@
-import Edictor from "./components/Editor";
-import Preview from "./components/Preview";
 import InputEditor from "./containers/InputEditor";
+import ShowPreview from "./containers/ShowPreview";
+import "./App.css"
 
 function App() {
   return (
     <div>
-      {/* <Edictor /> */}
-      <Preview />
       <InputEditor />
+      <ShowPreview />
     </div>
   );
 }

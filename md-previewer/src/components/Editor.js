@@ -1,15 +1,17 @@
 import React from "react";
-import { placeholder } from "../assets/placeholder";
 import store from "../store/store";
 import "./editor.css"
 
-export default function Editor({message}) {
-    function handleChange(e) {
-
-    }
+export default function Editor({message, onInputChange}) {
     return(
-        <textarea id="editor" onChange={handleChange}>
-            {message}    
+        <textarea value={message} id="editor" 
+        onChange={e => {
+            e.preventDefault()
+            console.log(e.target.value)
+            onInputChange(e.target.value)
+        }}
+        >
+            {/* 受控组件，填入value值,非受控组件 */}
         </textarea>
     )
 }
