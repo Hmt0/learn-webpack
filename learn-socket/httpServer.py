@@ -14,7 +14,8 @@ def handle_client(c, addr):
         # 1024是一次性接收数据的最大长度：1024字节、
         headers = request.split(b"\r\n")
         # 拆分消息存放在header列表中
-        # HTTP标准中定义的换行符是”回车+换行（CR LF）“
+        # HTTP标准中定义的换行符是”回车+换行（CR LF）
+        print(headers[0])
         file = headers[0].split()[1].decode()
         # 提取文件名
 
@@ -33,6 +34,9 @@ def handle_client(c, addr):
 
 if __name__ == "__main__":
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
+    # 改变当前工作目录到指定的路径
+    # 去掉文件名，返回目录
+    # 获取当前脚本完全路径
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         # IPv4地址家族
         # TCP协议
