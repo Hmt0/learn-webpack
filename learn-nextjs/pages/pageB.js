@@ -1,15 +1,15 @@
 import Link from "next/link"
-import Router from "next/router"
+import Router, { withRouter } from "next/router"
 
-function PageB() {
+function PageB({router}) {
     function goto() {
         Router.push("/")
     }
     return (
         <>
-            <button onClick={goto}>找大瑞</button>
+            <button onClick={goto}>{router.query.name}来为你服务了</button>
         </>
     )
 }
 
-export default PageB
+export default withRouter(PageB)
